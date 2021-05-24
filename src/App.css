@@ -7,3 +7,80 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.form {
+  width: 280px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.form__prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__min-price,
+.form__max-price {
+  width: 35%;
+}
+
+.form__button {
+  padding: 0.1rem;
+}
+
+.home__games-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem 2rem;
+  padding: 1rem;
+}
+
+.home__game {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.game__cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.game__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.game__details {
+  width: 60%;
+  padding-left: 0.5rem;
+}
+
+.game__title {
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.game__view-deals {
+  padding: 0.1rem;
+  border: 1px solid black;
+  background-color: rgb(231, 231, 231);
+  color: black;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
