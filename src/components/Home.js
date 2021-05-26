@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [title, setTitle] = useState("");
@@ -32,9 +33,9 @@ export default function Home() {
             </div>
             <div className="game__details">
               <h2 className="game__title">{game.external}</h2>
-              <a className="game__view-deals" href="#">
-                See Deals
-              </a>
+              <Link className="game__view-deals" to={`/deals/${game.gameID}`}>
+                View Deals
+              </Link>
             </div>
           </div>
         ))}

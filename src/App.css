@@ -84,3 +84,64 @@ body {
   font-size: 0.9rem;
   text-decoration: none;
 }
+
+.chosen-game {
+  display: flex;
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  background-color: rgb(43, 43, 43);
+  color: rgb(207, 207, 207);
+}
+
+.chosen-game__cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.chosen-game__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.chosen-game__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  padding-left: 0.5rem;
+}
+
+.deals {
+  width: 50%;
+  margin: 3rem auto 0;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+.deal {
+  height: 50px;
+}
+
+.deal__seller-logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.deal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deal__get-deal {
+  padding: 0.1rem;
+  border: 1px solid black;
+  background-color: rgb(231, 231, 231);
+  color: black;
+  text-decoration: none;
+}
