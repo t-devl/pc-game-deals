@@ -5,6 +5,11 @@
 }
 
 body {
+  min-width: 280px;
+  max-width: 1400px;
+  margin: auto;
+  background-color: rgb(74, 79, 97);
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,12 +21,18 @@ body {
 
 .form__label {
   display: block;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 .form__input {
   width: 100%;
-  padding: 0.1rem;
+  padding: 0.1rem 0.2rem;
   margin-bottom: 0.75rem;
+  border: 1px solid black;
+  background-color: rgb(176, 179, 190);
+  font-size: 1rem;
 }
 
 .form__prices {
@@ -35,13 +46,15 @@ body {
 }
 
 .form__button {
-  padding: 0.1rem;
+  padding: 0.2rem;
+  border: 1px solid black;
+  text-transform: uppercase;
 }
 
 .home__games-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 0.5rem 2rem;
+  gap: 1rem;
   padding: 1rem;
 }
 
@@ -49,6 +62,9 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: rgb(24, 27, 39);
+  color: white;
+  box-shadow: 0 0 4px 1px rgb(46, 51, 68);
 }
 
 .game__cover {
@@ -67,31 +83,42 @@ body {
 
 .game__details {
   width: 60%;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
 }
 
 .game__title {
   margin-bottom: 0.5rem;
-  font-weight: normal;
   font-size: 1rem;
+  font-weight: normal;
 }
 
 .game__view-deals {
-  padding: 0.1rem;
+  padding: 0.2rem;
   border: 1px solid black;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(235, 235, 235);
   color: black;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   text-decoration: none;
+}
+
+.deals-container {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.home-link {
+  margin-bottom: 0.5rem;
+  color: white;
 }
 
 .chosen-game {
   display: flex;
-  width: 50%;
+  max-width: 500px;
   height: 150px;
-  margin: auto;
-  background-color: rgb(43, 43, 43);
-  color: rgb(207, 207, 207);
+  margin: 1rem auto;
+  background-color: rgb(24, 27, 39);
+  color: white;
 }
 
 .chosen-game__cover {
@@ -117,14 +144,18 @@ body {
 }
 
 .deals {
-  width: 50%;
-  margin: 3rem auto 0;
-  background-color: rgb(43, 43, 43);
-  color: white;
+  max-width: 500px;
+  margin: auto;
 }
 
 .deal {
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(24, 27, 39);
+  box-shadow: 0 0 4px 1px rgb(46, 51, 68);
 }
 
 .deal__seller-logo {
@@ -132,16 +163,11 @@ body {
   margin-right: 1rem;
 }
 
-.deal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .deal__get-deal {
-  padding: 0.1rem;
+  padding: 0.2rem;
   border: 1px solid black;
   background-color: rgb(231, 231, 231);
   color: black;
+  text-transform: uppercase;
   text-decoration: none;
 }
