@@ -4,17 +4,25 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const [title, setTitle] = useState("");
   const [games, setGames] = useState([]);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch(`https://www.cheapshark.com/api/1.0/games?title=${title}`)
       .then((res) => res.json())
-      .then((data) => setGames(data));
+      .then((data) => {
+        setFormSubmitted(true);
+        setGames(data);
+      });
   };
 
   return (
     <div className="home" onSubmit={handleSubmit}>
-      <form className="home__form form">
+      <form
+        className={
+          formSubmitted ? "home__form form form--submitted" : "home__form form"
+        }
+      >
         <div className="form__title">
           <label className="form__label">Title</label>
           <input

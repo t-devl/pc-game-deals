@@ -12,10 +12,6 @@ export default function Deals(props) {
       .then((data) => setGameInfo(data));
   }, []);
 
-  useEffect(() => {
-    console.log(gameInfo);
-  }, [gameInfo]);
-
   if (gameInfo) {
     return (
       <div className="deals-container">
@@ -24,12 +20,16 @@ export default function Deals(props) {
         </Link>
         <div className="chosen-game">
           <div className="chosen-game__cover">
-            <img className="chosen-game__image" src={gameInfo.info.thumb}></img>
+            <img
+              className="chosen-game__image"
+              src={gameInfo.info.thumb}
+              alt=""
+            ></img>
           </div>
           <div className="chosen-game__details">
             <h2 className="chosen-game__title">{gameInfo.info.title}</h2>
             <p className="chosen-game__cheapest-price">
-              Cheapest: ${gameInfo.cheapestPriceEver.price}
+              Cheapest Ever: ${gameInfo.cheapestPriceEver.price}
             </p>
             <p className="chosen-game__retail-price">
               Retail: ${gameInfo.deals[0].retailPrice}
@@ -44,6 +44,7 @@ export default function Deals(props) {
                 src={`https://www.cheapshark.com/img/stores/logos/${
                   deal.storeID - 1
                 }.png`}
+                alt=""
               ></img>
               <p className="deal__price">${deal.price}</p>
               <a
