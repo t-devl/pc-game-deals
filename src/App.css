@@ -87,6 +87,17 @@ body {
   }
 }
 
+.home__message {
+  color: rgb(240, 239, 244);
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
 .home__game {
   display: flex;
   align-items: center;

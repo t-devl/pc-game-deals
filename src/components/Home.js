@@ -34,19 +34,23 @@ export default function Home() {
         <button className="form__button">Search Games</button>
       </form>
       <div className="home__games-container">
-        {games.map((game) => (
-          <div className="home__game game" key={game.gameID}>
-            <div className="game__cover">
-              <img className="game__image" src={game.thumb} alt=""></img>
+        {games.length === 0 && formSubmitted ? (
+          <p className="home__message">No games were found under this name.</p>
+        ) : (
+          games.map((game) => (
+            <div className="home__game game" key={game.gameID}>
+              <div className="game__cover">
+                <img className="game__image" src={game.thumb} alt=""></img>
+              </div>
+              <div className="game__details">
+                <h2 className="game__title">{game.external}</h2>
+                <Link className="game__view-deals" to={`/deals/${game.gameID}`}>
+                  View Deals
+                </Link>
+              </div>
             </div>
-            <div className="game__details">
-              <h2 className="game__title">{game.external}</h2>
-              <Link className="game__view-deals" to={`/deals/${game.gameID}`}>
-                View Deals
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );
