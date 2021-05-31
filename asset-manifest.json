@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/pc-game-deals/static/css/main.2ccc4e9f.chunk.css",
-    "main.js": "/pc-game-deals/static/js/main.1ab7d2f9.chunk.js",
-    "main.js.map": "/pc-game-deals/static/js/main.1ab7d2f9.chunk.js.map",
+    "main.js": "/pc-game-deals/static/js/main.fcd6b687.chunk.js",
+    "main.js.map": "/pc-game-deals/static/js/main.fcd6b687.chunk.js.map",
     "runtime-main.js": "/pc-game-deals/static/js/runtime-main.6957eedc.js",
     "runtime-main.js.map": "/pc-game-deals/static/js/runtime-main.6957eedc.js.map",
-    "static/js/2.0b0c46bc.chunk.js": "/pc-game-deals/static/js/2.0b0c46bc.chunk.js",
-    "static/js/2.0b0c46bc.chunk.js.map": "/pc-game-deals/static/js/2.0b0c46bc.chunk.js.map",
+    "static/js/2.f1943231.chunk.js": "/pc-game-deals/static/js/2.f1943231.chunk.js",
+    "static/js/2.f1943231.chunk.js.map": "/pc-game-deals/static/js/2.f1943231.chunk.js.map",
     "static/js/3.962f502e.chunk.js": "/pc-game-deals/static/js/3.962f502e.chunk.js",
     "static/js/3.962f502e.chunk.js.map": "/pc-game-deals/static/js/3.962f502e.chunk.js.map",
     "index.html": "/pc-game-deals/index.html",
     "static/css/main.2ccc4e9f.chunk.css.map": "/pc-game-deals/static/css/main.2ccc4e9f.chunk.css.map",
-    "static/js/2.0b0c46bc.chunk.js.LICENSE.txt": "/pc-game-deals/static/js/2.0b0c46bc.chunk.js.LICENSE.txt"
+    "static/js/2.f1943231.chunk.js.LICENSE.txt": "/pc-game-deals/static/js/2.f1943231.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6957eedc.js",
-    "static/js/2.0b0c46bc.chunk.js",
+    "static/js/2.f1943231.chunk.js",
     "static/css/main.2ccc4e9f.chunk.css",
-    "static/js/main.1ab7d2f9.chunk.js"
+    "static/js/main.fcd6b687.chunk.js"
   ]
 }
